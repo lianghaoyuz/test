@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(177, 105, 105);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    /* background-image: url('./test.png'); */
+    background-repeat: no-repeat;
+}
