@@ -1,11 +1,9 @@
 {
-  "name": "builder-webpack",
+  "name": "builder-webpack-lhyz",
   "version": "1.0.0",
-  "description": "",
+  "description": "my webpack config",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "licenses": ["ISC"],
   "scripts": {
     "test": "npx mocha",
     "cover": "istanbul cover mocha",
