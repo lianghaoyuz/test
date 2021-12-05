@@ -1,8 +1,9 @@
-const path = require('path')
+/* eslint-disable no-undef */
+/* eslint-disable global-require */
+const path = require('path');
 
-process.chdir(path.join(__dirname, 'smoke/template'))
+process.chdir(path.join(__dirname, 'smoke/template'));
 
-describe('builder-webpack test', function(){
-  const baseTest = require('./unit/webpack-base-test')
-  
-})
+describe('builder-webpack test', () => {
+  require('./unit/webpack-base-test');
+});

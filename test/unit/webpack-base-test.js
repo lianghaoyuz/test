@@ -1,9 +1,11 @@
-const assert = require('assert')
+/* eslint-disable global-require */
+/* eslint-disable no-undef */
+const assert = require('assert');
 
-describe('test webpack.base.js', function(){
-  const baseConfig = require('../../lib/webpack.base')
-  it('entry', function(){
-    assert.equal(baseConfig.entry.index, '/Users/lianghaoyu/Desktop/toltal/webpack_demo/builder-webpack/test/smoke/template/src/index/index.js')
-    assert.equal(baseConfig.entry.search, '/Users/lianghaoyu/Desktop/toltal/webpack_demo/builder-webpack/test/smoke/template/src/search/index.js')
-  })
-})
+describe('test webpack.base.js', () => {
+  const baseConfig = require('../../lib/webpack.base');
+  it('entry', () => {
+    assert.equal(baseConfig.entry.index, `${process.cwd()}/src/index/index.js`);
+    assert.equal(baseConfig.entry.search, `${process.cwd()}/src/search/index.js`);
+  });
+});
